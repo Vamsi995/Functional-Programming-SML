@@ -31,7 +31,14 @@ fun len [] = 0
   | len (_::xs) = 1 + len xs 
 
 (*val res = len [1,2,3]*)
-	      
+
+
+(* Map function in sml *)
+
+fun map f [] = []
+  | map f (x::xs) = x : map f xs 
+
+			  
 			
 (* Append function *)
 fun append [] x = x :: []
@@ -39,4 +46,15 @@ fun append [] x = x :: []
 
 (*val res = append [2,3,4] 3*)
 		 
-		   
+
+
+(* Concat function *)
+
+val x = [2,3,4] @ [3,4] (* For concatenating two lists *)
+
+	(* concat: 'a list -> 'a list -> 'a list *)
+
+fun concat (x::xs) ys = x :: concat xs ys
+  | concat [] ys = ys
+
+		
