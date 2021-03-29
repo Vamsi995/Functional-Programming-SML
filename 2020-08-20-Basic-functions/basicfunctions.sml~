@@ -1,0 +1,13 @@
+(*
+1. Write the tri-variate versions of curry and uncurry functions.
+*)
+
+fun curry f x y z = f (x,y,z)
+fun uncurry f (x,y,z) = f x y z
+
+(*
+2.
+*)
+
+fun fst (u,v) = u
+fun snd (u,v) = v

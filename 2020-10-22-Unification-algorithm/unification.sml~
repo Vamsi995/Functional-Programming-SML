@@ -1,0 +1,27 @@
+
+(*
+1. unify : telescope -> (term, term) -> option telescope. Given a telescope σ and terms s and t, it computes an extension σ₀ of σ (if possible) that unifies s[σ] and t[σ]. Recall our notation that s[σ] is the term obtained by substituting all the variable assignments of σ in s.
+*)
+
+functor Unify (structure S:SIG
+	       structure V:VAR
+	      ) = struct
+
+
+fun unify 
+
+
+
+end
+
+
+
+
+
+
+
+(*
+2. unifyList : telescope -> (term, term) list -> option telescope. This function simultaneously unifies each of the terms under the given telescope.
+*)
+
+
